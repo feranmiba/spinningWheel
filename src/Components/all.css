@@ -1,0 +1,62 @@
+.wrapper {
+    width: 90%;
+    max-width: 34.37rem;
+    max-height: 90vh;
+    background-color: rgba(240, 223, 243, 0.925);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 0 4em 5em rgba(27, 8, 53, 0.2);
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.wheel {
+    width: inherit;
+    max-height: inherit;
+    top: 0;
+    padding: 0;
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(360dg);
+    }
+}
+.spin-btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 15%;
+    height: 12%;
+    text-transform: uppercase;
+    border-radius: 50%;
+    cursor: pointer;
+    background: radial-gradient(#ffd35a 50%, #ffc895 85%);
+    color: #c66e16;
+    font-weight: 800;
+}
+.arrow {
+    position: absolute;
+    width: 4em;
+    top: 41%;
+    right: 34.5%; 
+}
+@media (max-width: 500px) {
+    .spin-btn {
+        top: 25%;
+        left: 50%;
+        width: 15%;
+        height: 5%;
+    } 
+    .arrow {
+        position: absolute;
+        width: 4em;
+        top: 25%;
+        right: 20%; 
+    }
+}
